@@ -15,3 +15,20 @@ Date: April 20, 2020
 
 Requirements: implemented in Matlab R2019a version, but should run on most versions.
 
+Contents: 
+> main.m:       **Master script**. 
+
+> EFBS.m:       **Efficient forward filtering and backward smoothing function**.
+
+> Filtering.m:  **Conventional forward filtering and backward smoothing function**.
+
+> EfficientFFBS.pdf: **Derivation and details of the algorithm**.
+
+Instructions: Simple and easy. Download all the codes in a directory and run main.m, that will generate one example described below. To use the functions individually, please look at the function descriptions. The derivations and details are also explained in .pdf file.
+
+Example:
+
+| ![](Figs/FullModel.png)| 
+|:--:| 
+| Fig 1. Comparison of the conventional filtering and EfficientFFBS |
+
