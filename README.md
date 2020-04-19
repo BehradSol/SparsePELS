@@ -28,6 +28,6 @@ Instructions: Simple and easy. Download all the codes in a directory and run mai
 
 Example:
 
-<p align="center">
-  <img src="https://github.com/BehradSol/SparsePELS/tree/master/Figs/FullModel.png">
-</p>
+| ![](Figs/FullModel.png) | 
+|:--:| 
+| Fig 1. Comparison of the conventional filtering and EfficientFFBS |
