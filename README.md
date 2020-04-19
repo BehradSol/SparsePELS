@@ -28,6 +28,6 @@ Instructions: Simple and easy. Download all the codes in a directory and run mai
 
 Example:
 
-| ![](Figs/FullModel.png) | 
+| ![\center](Figs/FullModel.png) | 
 |:--:| 
 | Fig 1. Comparison of the conventional filtering and EfficientFFBS |
