@@ -28,7 +28,7 @@ Instructions: Simple and easy. Download all the codes in a directory and run mai
 
 Example:
 
-| ![]<span style="display:block;text-align:center">(Figs/FullModel.png) </span> | 
+| ![](Figs/FullModel.png)| 
 |:--:| 
 | Fig 1. Comparison of the conventional filtering and EfficientFFBS |
 
