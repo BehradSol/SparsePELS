@@ -11,7 +11,7 @@ Citation: If you find these piece of codes helpful in your reserach, please cite
 
 -Soleimani, B., P. Das, P., J. Kulasingham, J. Z. Simon and B. Babadi (2020) Granger Causal Inference from Indirect Low-Dimensional Measurements with Application to MEG Functional Connectivity Analysis, 2020 54th Annual Conference on Information Sciences and Systems.
 
-Date: April 20, 2020
+Date: May 3, 2020
 
 Requirements: implemented in Matlab R2019a version, but should run on most versions.
 
