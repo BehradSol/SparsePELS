@@ -1,11 +1,11 @@
-function [A, B, Q, LL,m] = EM(y, e, C, R, p, lambda, max_iterations, tol)
+function [A, B, Q, LL] = EM(y, e, C, R, p, lambda, max_iterations, tol)
     
     if nargin < 7
         max_iterations = 1e3;
     end
     
     if nargin < 8
-        tol = 1e-5;    
+        tol = 1e-4;    
     end
     
     L = size(y);
@@ -33,6 +33,8 @@ function [A, B, Q, LL,m] = EM(y, e, C, R, p, lambda, max_iterations, tol)
     LLvec(1) = -0.5*trace(y'*y) -T*log(2*pi) - T/2*log(det(R));
     
     for i = 2 : max_iterations
+        fprintf('%d ,',i-1)
+
         [G, S, U, h, d, f, m, AllCov] = EStep(y, A, Q, C, R, e, B);
         for k = 1 : alternating
             [A,B,Q] = MStep(G, S, U, h, d, f, A, B,lambda,gamma,T);
@@ -43,6 +45,7 @@ function [A, B, Q, LL,m] = EM(y, e, C, R, p, lambda, max_iterations, tol)
             LLvec(i:end) = LLvec(i);
             break;
         end
+
     end
     LL = LLvec(end);
 end

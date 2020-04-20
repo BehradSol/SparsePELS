@@ -19,17 +19,17 @@ function [A, B, Q, LL] = CrossValidation(LambdaVec, y, e, C, R, p)
                 yTrain = y(:,1 : TA + (k-1)*TB);
                 yTest =  y(:, TA + (k-1)*TB + 1 : TA + TB + (k-1)*TC );
 
-                [A, B, Q, ~,m] = EM(yTrain, e, C, R, p, lambda);
+                [A, B, Q, ~] = EM(yTrain, e, C, R, p, lambda);
                
                 LL(i) = LL(i) + LLCalculation(yTest, A, Q, C, R, e, B, p);
 
             end
         end
         LL = real(LL);
-        figure(1)
-        loglog(LambdaVec,(LL/k),'-*','LineWidth',2)
-        xlabel('Regularization Coeff')
-        ylabel('Log-Likelihood')
+%         figure(1)
+%         loglog(LambdaVec,(LL/k),'-*','LineWidth',2)
+%         xlabel('Regularization Coeff')
+%         ylabel('Log-Likelihood')
     
         [~,idx] = max(LL/k);
     else
@@ -39,7 +39,7 @@ function [A, B, Q, LL] = CrossValidation(LambdaVec, y, e, C, R, p)
 
     fprintf('\n Test with  lambda = %d ... \n', lambdaStar)
 
-    [A, B, Q, LL,m] =  EM(y, e, C, R, p, lambdaStar);
+    [A, B, Q, LL] =  EM(y, e, C, R, p, lambdaStar);
     fprintf('\n Full Model Done! \n')
 
 

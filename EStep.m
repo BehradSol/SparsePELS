@@ -47,7 +47,7 @@ function [G, S, U, h, d, f, m, AllCov] = EStep(y, Ao, Qo, Co, R, e, Bo)
     B = zeros(NNx,Ne);
     B(1:Nx , :) = Bo;
     
-    Sig = dare(A',A'*C',Q,C*Q*C' + R,Q*C',[]);   %Sigma_{k|k}
+    Sig = idare(A',A'*C',Q,C*Q*C' + R,Q*C',[]);   %Sigma_{k|k}
 
     if (isempty(Sig))
         disp('Augmented A matrix is not stable!')
