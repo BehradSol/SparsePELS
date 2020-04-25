@@ -18,11 +18,21 @@ Requirements: implemented in Matlab R2019a version, but should run on most versi
 Contents: 
 > main.m:       **Master script**. 
 
-> EFBS.m:       **Efficient forward filtering and backward smoothing function**.
+> SparsePELS.m:       **SparsePELS Algorithm**. 
 
-> Filtering.m:  **Conventional forward filtering and backward smoothing function**.
+> EM.m:       **Expectation maximization (EM) algorithm**.
 
-> EfficientFFBS.pdf: **Derivation and details of the algorithm**.
+> EStep.m:       **Expectation(E-) step**.
+
+> IRLS.m:       **Iteratively re-weighted least square (IRLS) algorithm**.
+
+> MStep.m:       **Maximization(M-) step**.
+
+> VARGenerator.m:       **VAR process generator**.
+
+> redblue.m:  **Red-Blue color map**.
+
+> SparsePELS.pdf: **Derivation and details of the algorithm**.
 
 Instructions: Simple and easy. Download all the codes in a directory and run main.m, that will generate one example described below. To use the functions individually, please look at the function descriptions. The derivations and details are also explained in .pdf file.
 
