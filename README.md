@@ -22,11 +22,11 @@ Contents:
 
 > EM.m:       **Expectation maximization (EM) algorithm**.
 
-> EStep.m:       **Expectation(E-) step**.
+> EStep.m:       **Expectation (E-) step**.
 
 > IRLS.m:       **Iteratively re-weighted least square (IRLS) algorithm**.
 
-> MStep.m:       **Maximization(M-) step**.
+> MStep.m:       **Maximization (M-) step**.
 
 > VARGenerator.m:       **VAR process generator**.
 
