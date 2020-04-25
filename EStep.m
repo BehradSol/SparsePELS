@@ -2,7 +2,26 @@
 %% Author: Behrad Soleimani <behrad@umd.edu>
 
 function [G, S, U, h, d, f, m, AllCov] = EStep(y, Ao, Qo, Co, R, e, Bo)
+     % This function implements the expectation (E-) step.
     
+    % Inputs:
+    % y  = observation matrix with dimension N_y * T
+    % Ao = VAR coefficients; A is a p * 1 cell corresponding to each lag 
+    %     such that each cell is an N_x * N_x matrix
+    % Qo = source noise covariance matrix with dimension N_x * N_x
+    % Co = linear mapping matrix between observations and sources with
+    %     dimension N_y * N_x
+    % R  = observation noise matrix with dimension N_y * N_y
+    % e  = stimuli matrix with dimension N_e * T
+    % Bo = stimuli coefficients matrix with dimension N_x * N_e
+
+    % Outputs:
+    % G,S,U,h,d,f = parameters computed at E-step
+    % m           = estimated mean matrix with dimension N_x * T
+    % AllCov      = sum of estimated covariance matrices (for t=1,...,T) 
+    %               with dimension N_x * N_x
+    % ---------------------------------------------------------------------
+
     smallvalue = 1e-15;
     p = length(Ao);
     Nx = length(Ao{1});

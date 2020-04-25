@@ -1,7 +1,26 @@
 %% This file is distributed under BSD (simplified) license
 %% Author: Behrad Soleimani <behrad@umd.edu>
 
-function [A,B,Q] = MStep(G, S, U, h, d, f, A, B,lambda,gamma,T)
+function [A,B,Q] = MStep(G, S, U, h, d, f, A, B, lambda, gamma, T)
+    % This function implements the maximization (M-) step.
+    
+    % Inputs:
+    % G,S,U,h,d,f = parameters computed at E-step
+    % A       = VAR coefficients; A is a p * 1 cell corresponding to each  
+    %           lag such that each cell is an N_x * N_x matrix
+    % B       = stimuli coefficients matrix with dimension N_x * N_e
+    % lambda  = regularization constant of VAR coefficients
+    % gamma   = regularization constant of stimuli coefficients
+    % T       = number of samples
+
+    % Outputs:
+    % A  =  updated VAR coefficients; A is a p * 1 cell corresponding to 
+    %       each lag such that each cell is an N_x * N_x matrix
+    % B   = updated stimuli coefficients matrix with dimension N_x * N_e
+    % Q   = updated source noise covariance matrix with dimension N_x * N_x
+
+    % ---------------------------------------------------------------------
+
     p = length(A);
     Nx = length(A{1});
     

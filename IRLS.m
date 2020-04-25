@@ -1,3 +1,6 @@
+%% This file is distributed under BSD (simplified) license
+%% Author: Behrad Soleimani <behrad@umd.edu>
+
 function  [a,B] = IRLS(G,U,S,h,d,lambda,gamma, a, B)
     L = size(h);
     Nx = L(1,2);

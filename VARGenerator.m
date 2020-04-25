@@ -1,4 +1,29 @@
+%% This file is distributed under BSD (simplified) license
+%% Author: Behrad Soleimani <behrad@umd.edu>
+
 function [y, e, R, C, A, Q, B] = VARGenerator(T, p, Nx, Ny, Ne)
+    % This function generates a VAR process.
+    
+    % Inputs:
+    % T  = number of samples
+    % p  = VAR model order (number of lags)
+    % Nx = number of sources
+    % Ny = number of observations
+    % Ne = number of (external) stimuli
+
+    % Outputs:
+    % y   = observations matrix with dimension N_y * T
+    % e   = (external) stimuli vector with dimension N_e * 1
+    % R   = observation noise covariance matrix with dimension N_y * N_y
+    % C   = linear mapping between observations and sources with dimension 
+    %       N_y * N_x
+    % A   = VAR coefficients; A is a p * 1 cell corresponding to each lag 
+    %       such that each cell is an N_x * N_x matrix
+    % Q   = source noise covariance matrix with dimension N_x * N_x
+    % B   = stimuli coefficients matrix with dimension N_x * N_e
+
+    % ---------------------------------------------------------------------
+
 
     B = zeros(Nx,Ne);
     B(1,1) = -1;

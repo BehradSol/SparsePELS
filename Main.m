@@ -6,18 +6,18 @@ clear
 close all
 
 
-T = 400;
+T = 200;
 p = 2;
 
-Nx = 8;
+Nx = 5;
 Ny = 5;
 Ne = 1;
 
 
 [y, e, R, C, A, Q, B] = VARGenerator(T, p, Nx, Ny, Ne);
 
-lambdaVec = [50 75 100 150 200];
-[Af, Bf, Qf, LL] = CrossValidation(lambdaVec, y, e, C, R, p);
+lambdaVec = [200];
+[Af, Bf, Qf, LL] = SparsePELS(lambdaVec, y, e, C, R, p);
 
 cmap = redblue(200);
 
