@@ -18,15 +18,29 @@ Requirements: implemented in Matlab R2019a version, but should run on most versi
 Contents: 
 > main.m:       **Master script**. 
 
-> EFBS.m:       **Efficient forward filtering and backward smoothing function**.
+> SparsePELS.m:       **SparsePELS Algorithm**. 
 
-> Filtering.m:  **Conventional forward filtering and backward smoothing function**.
+> EM.m:       **Expectation maximization (EM) algorithm**.
 
-> EfficientFFBS.pdf: **Derivation and details of the algorithm**.
+> EStep.m:       **Expectation (E-) step**.
+
+> IRLS.m:       **Iteratively re-weighted least square (IRLS) algorithm**.
+
+> MStep.m:       **Maximization (M-) step**.
+
+> VARGenerator.m:       **VAR process generator**.
+
+> redblue.m:  **Red-Blue color map**.
+
+> SparsePELS.pdf: **Derivation and details of the algorithm**.
 
 Instructions: Simple and easy. Download all the codes in a directory and run main.m, that will generate one example described below. To use the functions individually, please look at the function descriptions. The derivations and details are also explained in .pdf file.
 
 Example:
+
+In this example, we assume that there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as a vector auto-regressive process with 2 lag, i.e. VAR(2). There are 3 active sources with unknown indeces.
+
+In Fig.1, the estimation and ground truth versions of the VAR coefficients along with the noise covariance matrix is demonstrated. The overall relative error between estimation and ground truth is less than 8%. 
 
 | ![](Figs/FullModel.png) | 
 |:--:| 
