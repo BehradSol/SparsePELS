@@ -18,7 +18,7 @@ Requirements: implemented in Matlab R2019a version, but should run on most versi
 Contents: 
 > main.m:       **Master script**. 
 
-> SparsePELS.m:       **SparsePELS Algorithm**. 
+> SparsePELS.m:       **SparsePELS algorithm**. 
 
 > EM.m:       **Expectation maximization (EM) algorithm**.
 
