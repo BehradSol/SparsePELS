@@ -38,7 +38,7 @@ Instructions: Simple and easy. Download all the codes in a directory and run mai
 
 Example:
 
-In this example, we assume that there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as a vector auto-regressive process with 2 lag, i.e. VAR(2). There are 3 active sources with unknown indeces.
+In this example, we assume that there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as a vector auto-regressive process with 2 lags, i.e. VAR(2). There are 3 active sources with unknown indeces.
 
 In Fig.1, the estimation and ground truth versions of the VAR coefficients along with the noise covariance matrix is demonstrated. The overall relative error between estimation and ground truth is less than 8%. 
 
