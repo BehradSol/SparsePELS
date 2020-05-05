@@ -47,8 +47,7 @@ where x<sub>t</sub> and y<sub>t</sub> represent the observation and source vecto
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59627073/81014376-bd110000-8e2a-11ea-91e4-e41cb0ac6543.jpg">
 </p>
-where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., *A_k (k=1,2,...,p), Q* given the indirect observations. Although the observations are low-dinemsional compare to the sources, we sparsit enables to accurately estimate activity of sources.
-
+where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., **A**<sub>k</sub> (k=1,2,...,p), B, and Q given the indirect observations. Although the observations are low-dinemsional compare to the sources, we sparsit enables to accurately estimate activity of sources.
 
 In this example, we assume that there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as a vector auto-regressive process with 2 lags, i.e. VAR(2). There are 3 active sources with unknown indeces.
 
