@@ -43,15 +43,15 @@ We consider the following observation model
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59627073/81014091-39efaa00-8e2a-11ea-8640-24d4fb30b3cd.jpg">
 </p>
-where x<sub>t</sub> and y<sub>t</sub> represent the observation and source vectors at t-th time sample, respectively. The underlying source dynamic is modeled via a vector auto-regressive process, VAR(p), as
+where x<sub>t</sub> and y<sub>t</sub> represent the observation and source vectors at t-th time sample, respectively. The underlying source dynamic is modeled via a vector autoregressive process, VAR(p), as
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59627073/81014376-bd110000-8e2a-11ea-91e4-e41cb0ac6543.jpg">
 </p>
-where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., A<sub>k</sub> (k=1,...,p), B, and Q given the indirect observations. Although the observations are low-dinemsional compare to the sources, we sparsit enables to accurately estimate activity of sources.
+where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., A<sub>k</sub> (k=1,...,p), B, and Q given the indirect observations. Although the observations are low-dimensional compare to the sources, we sparsity enables to accurately estimate the activity of sources.
 
-In this example, we assume that there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as a vector auto-regressive process with 2 lags, i.e. VAR(2). There are 3 active sources with unknown indeces.
+In this example, we assume there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as VAR(2). There are 3 active sources with unknown indices.
 
-In Fig.1, the estimation and ground truth versions of the VAR coefficients along with the noise covariance matrix is demonstrated. The overall relative error between estimation and ground truth is less than 8%. 
+In Fig.1, the estimation and ground truth versions of the VAR coefficients along with the noise covariance matrix are demonstrated. The overall relative error between estimation and ground truth is less than 8%. 
 
 | ![](Figs/FullModel.png) | 
 |:--:| 
