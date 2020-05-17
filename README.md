@@ -47,7 +47,7 @@ where x<sub>t</sub> and y<sub>t</sub> represent the observation and source vecto
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59627073/81014376-bd110000-8e2a-11ea-91e4-e41cb0ac6543.jpg">
 </p>
-where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., A<sub>k</sub> (k=1,...,p), B, and Q given the indirect observations. Although the observations are low-dimensional compare to the sources, we sparsity enables to accurately estimate the activity of sources.
+where e<sub>t</sub> shows the (external) stimuli vector corresponding to the t-th time sample. The goal is to find the corresponding sources' dynamic, i.e., A<sub>k</sub> (k=1,...,p), B, and Q given the indirect observations. Although the observations are low-dimensional compare to the sources, sparsity enables to accurately estimate the source activities.
 
 In this example, we assume there are N<sub>y</sub>=5 observations, N<sub>x</sub>=10 sources, and T=200 time samples. The underlying source dynamic is considered as VAR(2). There are 3 active sources with unknown indices.
 
