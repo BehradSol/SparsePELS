@@ -55,4 +55,4 @@ In Fig.1, the estimation and ground truth versions of the VAR coefficients along
 
 | ![](Figs/FullModel.png) | 
 |:--:| 
-| Fig 1. Comparison of the conventional filtering and EfficientFFBS |
+| Fig 1. Comparison of the estimation and ground truth versions.|
